@@ -11,10 +11,10 @@ public class Main {
 
        CalculationSign calculationSign = context.getBean("testBean", CalculationSign.class);
        Calculator calculator = new Calculator(calculationSign);
-        System.out.println("Введите первое число: ");
+        System.out.println("Enter first number: ");
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
-        System.out.println("Введите второе число: ");
+        System.out.println("Enter second number: ");
         int b = scanner.nextInt();
        calculator.calculate(a, b);
 
