@@ -11,4 +11,9 @@
           class="com.dyatlova.Sum">
     </bean>
 
+    <bean id = "calculator"
+          class="com.dyatlova.Calculator">
+        <constructor-arg ref="testBean"/>
+    </bean>
+
 </beans>

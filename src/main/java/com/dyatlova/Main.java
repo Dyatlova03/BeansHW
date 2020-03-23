@@ -9,8 +9,11 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml");
 
-       CalculationSign calculationSign = context.getBean("testBean", CalculationSign.class);
-       Calculator calculator = new Calculator(calculationSign);
+      // CalculationSign calculationSign = context.getBean("testBean", CalculationSign.class);
+      // Calculator calculator = new Calculator(calculationSign);
+
+        Calculator calculator = context.getBean("calculator", Calculator.class);
+
         System.out.println("Enter first number: ");
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
