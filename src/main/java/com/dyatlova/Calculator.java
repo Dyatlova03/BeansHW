@@ -7,7 +7,7 @@ public class Calculator {
         this.sign = sign;
     }
 
-    public void calculate(){
-        System.out.println("sign " + sign.getSign());
+    public void calculate(int a, int b){
+        System.out.println(a + sign.getSign() + b);
     }
 }
