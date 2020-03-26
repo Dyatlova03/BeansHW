@@ -7,13 +7,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="testBean"
-          class="com.dyatlova.Sum">
-    </bean>
-
-    <bean id = "calculator"
-          class="com.dyatlova.Calculator">
-        <constructor-arg ref="testBean"/>
-    </bean>
+    <context:component-scan base-package="com.dyatlova"/>
 
 </beans>
